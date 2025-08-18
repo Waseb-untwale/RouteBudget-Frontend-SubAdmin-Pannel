@@ -68,6 +68,7 @@ const AddCab = () => {
                 headers: { Authorization: `Bearer ${token}` },
                 body: formDataToSend,
             });
+            console.log("data",response);
 
             const data = await response.json();
 
