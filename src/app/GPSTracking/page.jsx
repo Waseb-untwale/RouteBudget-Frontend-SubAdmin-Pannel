@@ -2916,8 +2916,8 @@ const DynamicGPSTracking = () => {
   const wsRef = useRef(null)
   const reconnectTimeoutRef = useRef(null)
 
-  const API_BASE_URL = "http://localhost:5000/api"
-  const WS_URL = "ws://localhost:6010"
+  const API_BASE_URL = "https://api.routebudget.com/api"
+  const WS_URL = "wss://api.routebudget.com"
 
   const getAuthHeaders = () => {
     const token = localStorage.getItem("token")
